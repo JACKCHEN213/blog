@@ -14,15 +14,15 @@ class LoginController extends CommonController
     //
     public function login()
     {
-        if($Input = Input::all()){
+        if($input = Input::all()){
             $code = new \code;
             $_code = $code->get();
-            if(strtolower($Input['code']) != strtolower($_code)){
-                return back()->with(['msg'=>'验证码错误', 'name'=>$Input['user_name'], 'pass'=>$Input['user_pass']]);
+            if(strtolower($input['code']) != strtolower($_code)){
+                return back()->with(['msg'=>'验证码错误', 'name'=>$input['user_name'], 'pass'=>$input['user_pass']]);
             }
             $user = User::find(1);
-            if($Input['user_name'] != $user['user_name'] || $Input['user_pass'] != Crypt::decrypt($user['user_pass'])){
-                return back()->with(['msg'=>'用户名或密码错误', 'name'=>$Input['user_name'], 'pass'=>$Input['user_pass']]);
+            if($input['user_name'] != $user['user_name'] || $input['user_pass'] != Crypt::decrypt($user['user_pass'])){
+                return back()->with(['msg'=>'用户名或密码错误', 'name'=>$input['user_name'], 'pass'=>$input['user_pass']]);
             }else{
                 session(['user'=>$user]);
                 return redirect('admin/index');

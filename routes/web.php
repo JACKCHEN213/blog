@@ -21,6 +21,11 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware'=>['web', 'ad
     Route::get('/index', 'IndexController@index');
     Route::get('/info', 'IndexController@info');
     Route::get('/quit', 'IndexController@quit');
+    Route::any('/pass', 'IndexController@pass');
+    Route::post('/cate/changeOrder', 'CategoryController@changeOrder');
+
+
+    Route::resource('/category', 'CategoryController');
 });
 
 
