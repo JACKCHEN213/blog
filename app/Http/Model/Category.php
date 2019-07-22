@@ -9,6 +9,7 @@ class Category extends Model
     //
     protected  $primaryKey = "cate_id";
     protected  $table = "category";
+    protected  $guarded = [];
 
     public function tree()
     {
