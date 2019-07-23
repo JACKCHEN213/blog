@@ -3,7 +3,7 @@
 <!--面包屑导航 开始-->
 <div class="crumb_warp">
 	<!--<i class="fa fa-bell"></i> 欢迎使用登陆网站后台，建站的首选工具。-->
-	<i class="fa fa-home"></i> <a href="{{url('admin/index')}}">首页</a> &raquo; 全部分类
+	<i class="fa fa-home"></i> <a href="{{url('admin/info')}}">首页</a> &raquo; 全部文章
 </div>
 <!--面包屑导航 结束-->
 
@@ -30,16 +30,43 @@
 <!--结果页快捷搜索框 结束-->
 
 <!--搜索结果页面 列表 开始-->
+<style>
+	.tc{
+		display: inline-block;
+		width: 84px;
+		height: 40px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.tc_title{
+		width: 120px;
+	}
+	.tc_des{
+		width: 200px;
+	}
+	.tc_time{
+		width: 100px;
+		font-size: 15px;
+		line-height: 20px;
+		overflow: initial;
+		white-space: normal;
+	}
+	.result_content ul li span {
+		font-size: 15px;
+		padding: 6px 12px;
+	}
+</style>
 <form action="#" method="post">
 	<div class="result_wrap">
 		<!--快捷导航 开始-->
 		<div class="result_title">
-			<h3>分类管理</h3>
+			<h3>文章管理</h3>
 		</div>
 		<div class="result_content">
 			<div class="short_wrap">
-				<a href="{{url('admin/category/create')}}"><i class="fa fa-plus"></i>添加分类</a>
-				<a href="{{url('admin/category')}}"><i class="fa fa-recycle"></i>全部分类</a>
+				<a href="{{url('admin/article/create')}}"><i class="fa fa-plus"></i>添加文章</a>
+				<a href="{{url('admin/article')}}"><i class="fa fa-recycle"></i>全部文章</a>
 			</div>
 		</div>
 		<!--快捷导航 结束-->
@@ -49,49 +76,51 @@
 		<div class="result_content">
 			<table class="list_tab">
 				<tr>
-					<th class="tc" width="5%">排序</th>
+
+					<th class="tc">预览图</th>
 					<th class="tc" width="5%">ID</th>
-					<th>分类名称</th>
-					<th>标题</th>
-					<th>查看次数</th>
-					<th>发布人</th>
-					<th>更新时间</th>
-					<th>操作</th>
+					<th class="tc tc_title">标题</th>
+					<th class="tc">文章类型</th>
+					<th class="tc tc_des">文章描述</th>
+					<th class="tc">查看次数</th>
+					<th class="tc">发布人</th>
+					<th class="tc tc_time">发布时间</th>
+					<th class="tc tc_time">更新时间</th>
+					<th class="tc">操作</th>
 				</tr>
 				@foreach($data as $value)
 				<tr>
+					<td class="tc" >
+						<img src="{{$value->art_thumb}}" alt="无" style="height: 30px;">
+					</td>
+					<td class="tc">{{$value->art_id}}</td>
+					<td class="tc tc_title"><a href="#">{{$value->art_title}}</a></td>
 					<td class="tc">
-						<input type="text" name="ord[]" onchange="changeOrder(this, {{$value->cate_id}})" value="{{$value->cate_order}}">
+						@foreach($cate as $n)
+							@if($n->cate_id == $value->cate_id)
+								{{$n->cate_name}}
+							@endif
+						@endforeach
 					</td>
-					<td class="tc">{{$value->cate_id}}</td>
-					<td>
-						<a href="#">{{$value->_cate_name}}</a>
-					</td>
-					<td>{{$value->cate_title}}</td>
-					<td>{{$value->cate_view}}</td>
-					<td></td>
-					<td>{{$value->updated_at}}</td>
-					<td>
+					<td class="tc tc_des">{{$value->art_description}}</td>
+					<td class="tc">{{$value->art_view}}</td>
+					<td class="tc">{{$value->art_editor}}</td>
+					<td class="tc tc_time">{{Date('Y-m-d H:i:s', $value->art_time)}}</td>
+					<td class="tc tc_time">{{$value->updated_at}}</td>
+					<td class="tc">
 						<a href="{{url('admin/category/'.$value->cate_id.'/edit')}}">修改</a>
 						<a href="javascript:;" onclick="cateDel({{$value->cate_id}})">删除</a>
 					</td>
 				</tr>
 				@endforeach
 			</table>
+			<div class="page_list">
+				{{$data->links()}}
+			</div>
 		</div>
 	</div>
 </form>
 <script>
-	function changeOrder(obj, cate_id){
-	    var cate_order = $(obj).val()
-	    $.post("{{url('admin/cate/changeOrder')}}", {'_token':"{{csrf_token()}}", 'cate_id':cate_id, 'cate_order':cate_order}, function(data){
-	        if(data.status == 0){
-	            layer.msg(data.msg, {icon : 6});
-			}else{
-                layer.msg(data.msg, {icon : 5});
-			}
-		});
-	}
 	function cateDel(cate_id) {
         layer.confirm('您确定要删除该分类？', {
             btn: ['确定','取消'] //按钮

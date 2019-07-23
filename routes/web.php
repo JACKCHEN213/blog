@@ -26,6 +26,10 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware'=>['web', 'ad
 
 
     Route::resource('/category', 'CategoryController');
+    Route::resource('/article', 'ArticleController');
+
+    Route::any('/upload', 'CommonController@upload');
 });
+Route::any('mail/send', 'MailController@send');
 
 

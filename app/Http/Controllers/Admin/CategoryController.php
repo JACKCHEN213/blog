@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Model\Category;
 use Illuminate\Http\Request;
-use Illuminate\Foundation\Http\Middleware\ValidatePostSize;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
@@ -41,7 +40,8 @@ class CategoryController extends CommonController
     {
         $data = Category::where('cate_pid', 0)->get();
         return view('admin.category.add')->with('data', $data);
-    } //post.admin/category                   //添加分类提交
+    }
+    //post.admin/category                   //添加分类提交
     public function store()
     {
         if($input = Input::except('_token')){

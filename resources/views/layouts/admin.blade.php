@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{asset('resources/views/admin/style/css/ch-ui.admin.css')}}">
     <link rel="shortcut icon" href="{{asset('resources/views/admin/favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('resources/views/admin/style/font/css/font-awesome.min.css')}}">
+
     <script type="text/javascript" src="{{url('resources/views/admin/style/js/jquery.js')}}"></script>
     <script type="text/javascript" src="{{url('resources/views/admin/style/js/ch-ui.admin.js')}}"></script>
     <script type="text/javascript" src="{{url('resources/org/layer/layer.js')}}"></script>
