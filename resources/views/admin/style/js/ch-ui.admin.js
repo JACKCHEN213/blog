@@ -16,7 +16,7 @@ $(function(){
 		$(this).parents('.menu_box').find('li').removeClass('on');
 		$(this).addClass('on');
 	});
-})
+});
 
 //左侧点击弹开子菜单
 $(function(){
@@ -24,7 +24,7 @@ $(function(){
 	$('.menu_box').find('ul').find('li').find('h3').click(function(){
 		$(this).parent('li').find('.sub_menu').slideToggle();
 	});
-})
+});
 
 //tab面板切换
 $(function(){
@@ -41,7 +41,7 @@ $(function(){
 	$('.list_tab').find('tr').find('[type=checkbox]').click(function(){
 		$('.list_tab').find('td').find('[type=checkbox]').prop('checked',$(this).prop('checked'));
 	});
-})
+});
 
 //删除图片列表
 function del_pic(obj){

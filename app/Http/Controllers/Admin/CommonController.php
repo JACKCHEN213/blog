@@ -15,6 +15,7 @@ class CommonController extends Controller
     {
         $input = Input::file('file');
         if($input->isValid()){
+            date_default_timezone_set('PRC');
             $extension = $input->getClientOriginalExtension();
             $newName = date('YmdHis').mt_rand(100, 999).'.'.$extension;
             $input->move(base_path().'\storage\images', $newName);

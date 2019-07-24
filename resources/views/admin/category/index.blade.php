@@ -84,7 +84,7 @@
 <script>
 	function changeOrder(obj, cate_id){
 	    var cate_order = $(obj).val()
-	    $.post("{{url('admin/cate/changeOrder')}}", {'_token':"{{csrf_token()}}", 'cate_id':cate_id, 'cate_order':cate_order}, function(data){
+	    $.post("{{url('admin/category/changeOrder')}}", {'_token':"{{csrf_token()}}", 'cate_id':cate_id, 'cate_order':cate_order}, function(data){
 	        if(data.status == 0){
 	            layer.msg(data.msg, {icon : 6});
 			}else{
@@ -98,7 +98,7 @@
         }, function(){
             $.post("{{url('admin/category/')}}/" + cate_id, {'_method':'delete','_token':"{{csrf_token()}}"}, function (data) {
                 if(data.status == 0){
-                    window.location.href = window.location.href;
+                    location.href = window.location.href;
                     layer.msg(data.msg, {icon : 6});
                 }else {
                     layer.msg(data.msg, {icon: 5});

@@ -65,10 +65,19 @@
         <div class="result_content">
             <ul>
                 <li>
-                    <label>官方交流网站：</label><span><a href="#">http://www.baidu.com</a></span>
+                    <label>官方交流网站：</label><span><a href="http://www.baidu.com">http://www.baidu.com</a></span>
                 </li>
                 <li>
                     <label>官方交流QQ群：</label><span><a href="#"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png"></a></span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label>赞助：<span><a href="{{url('admin/links')}}"></a></span></label>
+                    <?php $data = \App\Http\Model\Links::all();?>
+                    @foreach($data as $key => $value)
+                        <span style="padding: 5px; background-color: grey;"><a href="{{$value->link_url}}"><img src="{{$value->link_logo}}" alt="{{$value->link_name}}" style="width: 24px;"></a></span>
+                    @endforeach
                 </li>
             </ul>
         </div>

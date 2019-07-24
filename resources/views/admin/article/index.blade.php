@@ -33,7 +33,7 @@
 <style>
 	.tc{
 		display: inline-block;
-		width: 84px;
+		width: 80px;
 		height: 40px;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -108,8 +108,8 @@
 					<td class="tc tc_time">{{Date('Y-m-d H:i:s', $value->art_time)}}</td>
 					<td class="tc tc_time">{{$value->updated_at}}</td>
 					<td class="tc">
-						<a href="{{url('admin/category/'.$value->cate_id.'/edit')}}">修改</a>
-						<a href="javascript:;" onclick="cateDel({{$value->cate_id}})">删除</a>
+						<a href="{{url('admin/article/'.$value->art_id.'/edit')}}">修改</a>
+						<a href="javascript:;" onclick="artDel({{$value->art_id}})">删除</a>
 					</td>
 				</tr>
 				@endforeach
@@ -121,13 +121,13 @@
 	</div>
 </form>
 <script>
-	function cateDel(cate_id) {
-        layer.confirm('您确定要删除该分类？', {
+	function artDel(art_id) {
+        layer.confirm('您确定要删除该文章？', {
             btn: ['确定','取消'] //按钮
         }, function(){
-            $.post("{{url('admin/category/')}}/" + cate_id, {'_method':'delete','_token':"{{csrf_token()}}"}, function (data) {
+            $.post("{{url('admin/article/')}}/" + art_id, {'_method':'delete','_token':"{{csrf_token()}}"}, function (data) {
                 if(data.status == 0){
-                    window.location.href = window.location.href;
+                    location.href = window.location.href;
                     layer.msg(data.msg, {icon : 6});
                 }else {
                     layer.msg(data.msg, {icon: 5});
@@ -135,7 +135,7 @@
             });
             //layer.msg();
         }, function(){
-
+				//这里是去取消按下后的操作
         });
     }
 </script>

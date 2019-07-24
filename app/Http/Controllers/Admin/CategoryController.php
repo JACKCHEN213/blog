@@ -29,7 +29,7 @@ class CategoryController extends CommonController
         }else{
             $data = [
                 'status' => 1,
-                'msg' => '分类排序更新失败,请稍后重试s',
+                'msg' => '分类排序更新失败,请稍后重试',
             ];
         }
         return $data;
@@ -95,7 +95,7 @@ class CategoryController extends CommonController
                 return back()->withErrors($validater);
             }
         }else{
-            return view('admin.category.edit');
+            return view('admin.category.index');
         }
     }
     //delete.admin/category/{category}  删除单个分类

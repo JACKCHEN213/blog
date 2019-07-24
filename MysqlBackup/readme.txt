@@ -1,0 +1,1 @@
+Use wampserver32 MySQL 5.7.14 for dealing with compatibility issues.

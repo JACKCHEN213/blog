@@ -19,17 +19,26 @@ Route::any('/admin/login', 'Admin\LoginController@login');
 Route::get('/admin/code', 'Admin\LoginController@code');
 Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware'=>['web', 'admin.login']],function() {
     Route::get('/index', 'IndexController@index');
+    Route::get('/element', function(){
+        return view('admin.element');
+    });
     Route::get('/info', 'IndexController@info');
     Route::get('/quit', 'IndexController@quit');
     Route::any('/pass', 'IndexController@pass');
-    Route::post('/cate/changeOrder', 'CategoryController@changeOrder');
 
-
+    Route::post('/category/changeOrder', 'CategoryController@changeOrder');
     Route::resource('/category', 'CategoryController');
+
     Route::resource('/article', 'ArticleController');
+
+    Route::post('/links/changeOrder', 'LinksController@changeOrder');
+    Route::resource('/links', 'LinksController');
+
+    Route::post('/navs/changeOrder', 'NavsController@changeOrder');
+    Route::resource('/navs', 'NavsController');
 
     Route::any('/upload', 'CommonController@upload');
 });
-Route::any('mail/send', 'MailController@send');
+Route::any('test', 'MailController@index');
 
 
