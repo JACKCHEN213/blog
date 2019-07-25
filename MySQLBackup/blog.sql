@@ -91,16 +91,12 @@ DROP TABLE IF EXISTS `blog_config`;
 CREATE TABLE `blog_config` (
   `conf_id` int(11) NOT NULL AUTO_INCREMENT,
   `conf_title` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '//配置标题',
-  `conf_name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '//配置名称',
+  `conf_name` varchar(5) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '//配置名称',
   `conf_content` text COLLATE utf8_unicode_ci COMMENT '//变量值',
   `conf_order` int(11) DEFAULT '0' COMMENT '//排序',
-  `conf_tips` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '//描述',
-  `field_type` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '//变量类型',
-  `field_value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '//变量值',
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
+  ` conf_tips` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '//描述',
   PRIMARY KEY (`conf_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,7 +105,6 @@ CREATE TABLE `blog_config` (
 
 LOCK TABLES `blog_config` WRITE;
 /*!40000 ALTER TABLE `blog_config` DISABLE KEYS */;
-INSERT INTO `blog_config` VALUES (1,'网站标题','web_title','blog系统',1,'网站标题','input',NULL,'2019-07-25 04:16:36','2019-07-25 14:12:07'),(2,'网站状态','web_status','2',2,'网站状态','radio','1|开启,2|关闭','2019-07-25 04:20:14','2019-07-25 14:12:07'),(3,'统计代码','count_code','https://www.baidu.com/',3,'统计代码','textarea',NULL,'2019-07-25 04:20:53','2019-07-25 14:12:07');
 /*!40000 ALTER TABLE `blog_config` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -233,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-25 22:27:26
+-- Dump completed on 2019-07-24 21:22:55
