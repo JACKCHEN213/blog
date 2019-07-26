@@ -43,6 +43,7 @@ class ArticleController extends CommonController
             $validater = Validator::make($input, $rules, $message);
             if($validater->passes()){
                 date_default_timezone_set('PRC');
+                $input['art_thumb'] = $input['art_thumb']? $input['art_thumb']: '/storage/images/001.png';
                 $input['art_time'] = time();
                 $input['art_view'] = 0;
                 $re = Article::create($input);
@@ -80,6 +81,7 @@ class ArticleController extends CommonController
             ];
             $validater = Validator::make($input, $rules, $message);
             if($validater->passes()){
+                $input['art_thumb'] = $input['art_thumb']? $input['art_thumb']: '/storage/images/001.png';
                 $res = Article::where('art_id', $art_id)->update($input);
                 if($res){
                     return redirect('admin/article');

@@ -3,7 +3,7 @@
 <!--面包屑导航 开始-->
 <div class="crumb_warp">
 	<!--<i class="fa fa-bell"></i> 欢迎使用登陆网站后台，建站的首选工具。-->
-	<i class="fa fa-home"></i> <a href="{{url('admin/info')}}">首页</a> &raquo;  	自定义导航
+	<i class="fa fa-home"></i> <a href="{{url('admin/info')}}">首页</a> &raquo;  	导航管理
 </div>
 <!--面包屑导航 结束-->
 
@@ -58,7 +58,7 @@
 	<div class="result_wrap">
 		<!--快捷导航 开始-->
 		<div class="result_title">
-			<h3>导航管理</h3>
+			<h3>导航列表</h3>
 		</div>
 		<div class="result_content">
 			<div class="short_wrap">
@@ -78,7 +78,7 @@
 					<th class="tc">导航名称</th>
 					<th class="tc">别名</th>
 					<th class="tc tc_addr">链接地址</th>
-					<th class="tc tc_time">更新时间</th>
+					<th class="tc" style="width: 100px;">更新时间</th>
 					<th class="tc">操作</th>
 				</tr>
 				@foreach($data as $value)
@@ -103,7 +103,6 @@
 
     function changeOrder(obj, nav_id){
         var nav_order = $(obj).val();
-        console.log(nav_order);
         $.post("{{url('admin/navs/changeOrder')}}", {'_token':"{{csrf_token()}}", 'nav_id':nav_id, 'nav_order':nav_order}, function(data){
             if(data.status == 0){
                 layer.msg(data.msg, {icon : 6});

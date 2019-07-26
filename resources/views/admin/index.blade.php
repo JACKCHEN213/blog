@@ -5,8 +5,8 @@
 	<div class="top_left">
 		<div class="logo">后台管理模板</div>
 		<ul>
-			<li><a href="#" class="active">首页</a></li>
-			<li><a href="#">管理页</a></li>
+			<li><a href="{{url('admin/info')}}" target="main" class="active">管理页</a></li>
+			<li><a href="{{url('/')}}" target="_blank">文章首页</a></li>
 		</ul>
 	</div>
 	<div class="top_right">
@@ -23,13 +23,12 @@
 <div class="menu_box">
 	<ul>
 		<li>
-			<h3><i class="fa fa-fw fa-clipboard"></i>常用操作</h3>
+			<h3><i class="fa fa-fw fa-clipboard"></i>内容管理</h3>
 			<ul class="sub_menu">
 				<li><a href="{{url('admin/category/create')}}" target="main"><i class="fa fa-fw fa-plus-square"></i>添加分类</a></li>
 				<li><a href="{{url('admin/category')}}" target="main"><i class="fa fa-fw fa-list-ul"></i>全部分类</a></li>
 				<li><a href="{{url('admin/article/create')}}" target="main"><i class="fa fa-fw fa-plus-square"></i>添加文章</a></li>
 				<li><a href="{{url('admin/article')}}" target="main"><i class="fa fa-fw fa-list-ul"></i>全部文章</a></li>
-				<li><a href="#" target="main"><i class="fa fa-fw fa-image"></i>图片列表</a></li>
 			</ul>
 		</li>
 		<li>
@@ -37,6 +36,7 @@
 			<ul class="sub_menu">
 				<li><a href="{{url('admin/links')}}" target="main"><i class="fa fa-fw fa-cubes"></i>友情链接</a></li>
 				<li><a href="{{url('admin/navs')}}" target="main"><i class="fa fa-fw fa-navicon"></i>自定义导航</a></li>
+				<li><a href="{{url('admin/config')}}" target="main"><i class="fa fa-fw fa-cogs"></i>配置项</a></li>
 				<li><a href="#" target="main"><i class="fa fa-fw fa-database"></i>备份还原</a></li>
 			</ul>
 		</li>

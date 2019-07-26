@@ -3,7 +3,7 @@
 <!--面包屑配置项 开始-->
 <div class="crumb_warp">
 	<!--<i class="fa fa-bell"></i> 欢迎使用登陆网站后台，建站的首选工具。-->
-	<i class="fa fa-home"></i> <a href="{{url('admin/info')}}">首页</a> &raquo;  	配置项
+	<i class="fa fa-home"></i> <a href="{{url('admin/info')}}">首页</a> &raquo;  	配置项管理
 </div>
 <!--面包屑配置项 结束-->
 
@@ -58,7 +58,7 @@
 <div class="result_wrap">
 	<!--快捷配置项 开始-->
 	<div class="result_title">
-		<h3>配置项管理</h3>
+		<h3>配置项列表</h3>
 		@if(count($errors)>0)
 				@if(is_object($errors))
 					@foreach($errors->all() as $error)
