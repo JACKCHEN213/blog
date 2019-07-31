@@ -49,6 +49,22 @@
                 </a>
             </td>
         </tr>
+        <tr>
+            <th width="120">条形码</th>
+            <td>
+                <a href="https://github.com/lindell/JsBarcode" target="_blank">
+                    https://github.com/lindell/JsBarcode
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <th width="120">二维码</th>
+            <td>
+                <a href="http://jeromeetienne.github.io/jquery-qrcode/" target="_blank">
+                    http://jeromeetienne.github.io/jquery-qrcode/
+                </a>
+            </td>
+        </tr>
     </table>
 </div>
 @endsection

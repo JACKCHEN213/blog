@@ -2,83 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8014ce-3f0a-4fd9-8c0a-86953f766118" name="Default" comment="Study laravel practice from bilibili the fourth day. Add method of delete and update in module Article. Add two modules of Links(friendly link) and Navigation. Backup files for the database are also uploaded. Reported by JackC.2019.7.24 night.">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/CommonController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_24_014959_create_links_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/LinksTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/book.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/case.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/learn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/mood.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/new.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/share.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/css/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/1f8aea2172f6eb987c3de3f7ba474eb1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/5416dd08017075c692766f67049890d4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/5794.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/5817.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/5849.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/5891.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/6167.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/6264.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/aboutphoto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/ad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/banner_top.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/e5e39b1148811261c78b933805d07232.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/h_line.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/import.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/li.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/logo - 副本.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/ph.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/photos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/r_line.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/r_title_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/time.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/weather.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/weather_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/weather_bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/images/weixin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/js/modernizr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/js/silder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/new.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/images/001.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/article/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/article/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/article/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/article/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/article/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/config/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/config/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/config/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/config/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/config/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/config/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/links/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/links/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/links/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/links/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/links/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/links/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/navs/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/navs/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/navs/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/navs/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/navs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/navs/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -340,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -351,7 +276,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,6 +331,7 @@
       <workItem from="1563924053446" duration="28651000" />
       <workItem from="1564011423172" duration="22273000" />
       <workItem from="1564096693668" duration="22164000" />
+      <workItem from="1564182797961" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Study laravel practice from bilibili first day and create the login and main interface. Reported by JackC.2019.7.21">
       <created>1563707484041</created>
@@ -454,7 +379,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181196000" />
+    <option name="totallyTimeSpent" value="181227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -466,10 +391,9 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49924356" visible="true" weight="0.3219512" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49834985" visible="true" weight="0.18910742" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49834985" visible="true" weight="0.19213313" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32954547" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" sideWeight="0.50165015" side_tool="true" weight="0.1860817" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
@@ -480,6 +404,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32954547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,9 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#46#70#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -546,9 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="66" />
-          <folding>
-            <element signature="e#46#74#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,9 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding>
-            <element signature="e#46#72#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,15 +599,6 @@
           <caret line="1" column="61" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="61" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/images/1f8aea2172f6eb987c3de3f7ba474eb1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/images/01.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/images/001.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/article/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -719,9 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -729,16 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/CommonController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-          <folding>
-            <element signature="e#45#72#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-395">
           <caret line="84" column="45" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="45" />
-          <folding>
-            <element signature="e#46#73#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,9 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
-          <folding>
-            <element signature="e#46#73#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

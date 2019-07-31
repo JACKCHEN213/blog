@@ -15,7 +15,7 @@
 <header>
     <div id="logo"><a href="{{url('/')}}"></a></div>
     <nav class="topnav" id="topnav">
-        @foreach($navs as $key => $value)<a href="{{url('$value->nav_url')}}"><span>{{$value->nav_name}}</span><span class="en">{{$value->nav_alias}}</span></a>@endforeach
+        @foreach($navs as $key => $value)<a href="{{url($value->nav_url)}}"><span>{{$value->nav_name}}</span><span class="en">{{$value->nav_alias}}</span></a>@endforeach
     </nav>
 </header>
 @section('content')
